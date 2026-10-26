@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu estudio de musica | Home</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        header p {
+            font-size: 1.1em;
+            margin: 10px 0;
+        }
+
+        main, footer {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        hr {
+            margin: 40px 0;
+            border: none;
+            border-top: 2px solid #e0e0e0;
+        }
+
+        section {
+            background: white;
+            padding: 40px;
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+        }
+
+        section h2 {
+            color: #667eea;
+            font-size: 2em;
+            margin-bottom: 20px;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 10px;
+        }
+
+        section h3 {
+            color: #764ba2;
+            font-size: 1.5em;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+
+        section p {
+            margin-bottom: 15px;
+            text-align: justify;
+            font-size: 1.05em;
+        }
+
+        figure {
+            text-align: center;
+            margin: 30px 0;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            transition: transform 0.3s ease;
+        }
+
+        img:hover {
+            transform: scale(1.02);
+        }
+
+        figcaption {
+            margin-top: 15px;
+            font-style: italic;
+            color: #666;
+            font-size: 0.95em;
+        }
+
+        nav {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+            padding: 20px 0;
+        }
+
+        nav a {
+            display: inline-block;
+            padding: 12px 25px;
+            background-color: #667eea;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            background-color: #764ba2;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+            margin-top: 60px;
+            border-top: 4px solid #667eea;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        strong {
+            color: #764ba2;
+            font-weight: 600;
+        }
+
+        em {
+            color: #667eea;
+        }
+
+        /* Hero com foto destacada */
+        .hero-section {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            background: white;
+            padding: 40px;
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+            flex-wrap: wrap;
+        }
+
+        .hero-image {
+            flex: 1;
+            min-width: 280px;
+            text-align: center;
+        }
+
+        .hero-image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(102, 126, 234, 0.3);
+        }
+
+        .hero-text {
+            flex: 1;
+            min-width: 280px;
+        }
+
+        .hero-text h2 {
+            color: #667eea;
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .hero-text p {
+            font-size: 1.05em;
+            margin-bottom: 15px;
+            color: #333;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.8em;
+            }
+
+            header p {
+                font-size: 1em;
+            }
+
+            section {
+                padding: 20px;
+            }
+
+            section h2 {
+                font-size: 1.6em;
+            }
+
+            .hero-section {
+                padding: 20px;
+                gap: 20px;
+            }
+
+            nav {
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            nav a {
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>🎵 Meu estúdio de música</h1>
+        <p>Olá, que bom te ver por aqui?!</p>
+        <p>Fique à vontade, sinta-se em casa e acompanhe minha jornada de estudos e evolução pelo maravilhoso mundo da música.</p>
+    </header>
+
+    <main>
+
+        <!-- SEÇÃO HERO COM FOTO DESTACADA -->
+        <section class="hero-section">
+            <div class="hero-image">
+                <img src="foto-apresentacao.jpeg" alt="João Paulo com violão em estúdio profissional">
+            </div>
+            <div class="hero-text">
+                <h2>Bem-vindo! 🎸</h2>
+                <p>Aqui você acompanhará minha jornada como músico, produtor e compositor. Sou <strong>João Paulo</strong>, conhecido como <strong>Toru</strong>, e estou com <strong>37 anos e 10 meses</strong>.</p>
+                <p>Neste espaço compartilho meus estudos, composições autorais e toda a minha evolução no mundo da música. Tenho paixão por aprender e criar!</p>
+                <p>Explore as seções abaixo e conheça melhor minha história, minha banda e meus trabalhos. Fique à vontade! 🎵</p>
+            </div>
+        </section>
+
+        <hr>
+
+        <!-- SEÇÃO DE APRESENTAÇÃO -->
+        <section id="apresentacao">
+            <h2>Permita-me apresentar-me...</h2>
+            <p>Espero que vocês gostem de música, assim como eu, e estejam prontos para ver a rotina de um músico!</p>
+            <p>Bem, eu sou o <strong>João Paulo</strong>, mas pode me chamar de <strong>Toru</strong>. No exato momento em que vos escrevo, estou na marca dos <strong>37 anos e 10 meses</strong>. Já aviso, de antemão, que logo logo estarei nos meus 38. A minha história, a minha história com a música, vem desde quando eu era pequeno e ouvia os discos de vinil do meu pai. Ouvi um pouco de tudo!</p>
+            <p>Além de estudar, também componho músicas autorais com meus amigos: <strong>Alexandre Soares</strong> e <strong>Jorge Augusto</strong>. Pois é, meus amigos, quem diria? Isso é, sem dúvidas, algo que gosto bastante. Também estou estudando música brasileira, pois ainda pretendo fazer uma faculdade de música: <em>"o que vai aumentar ainda mais meus conhecimentos!"</em></p>
+            <p>Ah! E preciso dizer que amo estudar, muito mesmo.</p>
+            <p><strong>Pois é! Esse sou eu.</strong></p>
+        </section>
+
+        <hr>
+
+        <!-- SEÇÃO DE REDES SOCIAIS -->
+        <section id="links">
+            <h2>🌐 Minhas redes e links</h2>
+            <p style="text-align: center; margin-bottom: 20px;">Me acompanhe nas redes sociais e fique por dentro do meu trabalho:</p>
+            <nav>
+                <a href="https://github.com/duquejoaopaulo1-afk" target="_blank" rel="noopener">🐙 GitHub</a>
+                <a href="https://www.linkedin.com/feed/" target="_blank" rel="noopener">💼 LinkedIn</a>
+                <a href="https://www.instagram.com/joaopauloduque/" target="_blank" rel="noopener">📸 Instagram</a>
+                <a href="https://www.tiktok.com/@joaopaulo3911" target="_blank" rel="noopener">🎵 TikTok</a>
+            </nav>
+        </section>
+
+        <hr>
+
+        <!-- SEÇÃO DE HISTÓRIA -->
+        <section id="minha-historia">
+            <h2>Como me tornei músico?</h2>
+
+            <h3>O estudo começou quando eu era bem pequeno...</h3>
+            <p>E ainda estudava e ouvia os discos de vinil do meu pai, <em>que eram ótimos, por sinal</em>, então cresci ouvindo um pouco de tudo, tanto músicas internacionais quanto nacionais.</p>
+            <p>Sendo eu uma criança que amava aprender coisas novas pelo simples fato de aprender mesmo, pensei: "Hm, ainda vou ser músico um dia". O tempo passou, eu cresci um pouco mais e, aí, na minha adolescência, comecei a ouvir rock and roll e continuei os estudos.</p>
+            <p>Mas o tempo passou e aí comecei a escutar músicas diferentes como samba, pagode, axé, funk, reggae, blues, jazz e muito mais.</p>
+            <p>Pois enfim, depois de muito tempo, só ouvindo, resolvi arriscar a tocar algum tipo de instrumento. Comecei com o violão, passei a aprender cifras, tablaturas e partituras.</p>
+            <p>Então, depois de alguns anos, resolvi começar a trabalhar, pois já tinha idade para isso e não consegui ir para a faculdade naquele tempo.</p>
+            <p>Voltei a estudar mais tarde e também a vontade de fazer algo na música voltou. Então comecei, finalmente, a mostrar meu lado criativo <strong>14 de setembro de 2018</strong>. O ano de 2018 foi muito importante para mim, pois comecei a estudar cursos profissionalizantes, que, além de me levarem para outro nível, mudariam minha vida e me trariam novos horizontes e trabalhos melhores. Um belo dia, na sala de aula, em um momento reflexivo, veio uma luz, uma ideia para criar algo novo. Daí nasceu a <strong>JP Music Art</strong>. Então comecei a pensar no que fazer com aquela ideia. Depois desenhei no caderno o que queria que a ideia se tornasse. Ela virou a logo do meu canal no YouTube. Depois de um tempo, me encontrei com um amigo e aí nasceu minha primeira música autoral. Mas ainda não foi o suficiente. Depois veio a pandemia, o distanciamento das pessoas, do trabalho, mas não dos estudos em casa, para não ficar doente, me preparando para voltar. Escrevi muitas músicas e aí sim comecei a compor e trabalhar em cima daquelas ideias musicais.</p>
+
+            <h3>Quando tudo mudou</h3>
+            <p>O tempo passou, a pandemia deu uma melhorada, então tudo voltava aos poucos. Aí eu e meu amigo que gravamos a primeira música decidimos nos encontrar para trocar ideias. Foi aí que conheci o Alexandre. A gente tocou uma composição minha e pensamos em gravar algo instrumental para ela. Aí ele também tinha ideias e então decidimos montar uma banda.</p>
+            <p>Passamos vários dias pensando em um nome para a banda. Cada um deu uma ideia até que, no fim, tínhamos músicas alegres, felizes, que falavam de Deus e até de relacionamentos amorosos e muito mais. Mas no fim tudo estava dentro dos conformes. Então decidimos criar um canal no YouTube, registrar nossas músicas e subir elas para todas as plataformas digitais. Então começamos as gravações. Eu compunha minhas letras e enviava para o Alexandre, que por fim fazia a parte instrumental e subia as músicas para as plataformas digitais pela OneRPM.</p>
+
+            <figure>
+                <img src="foto-foto com joao paulo e alexandre membros da banda.jpg" alt="Foto que marca o início de toda a história que vem a seguir">
+                <figcaption>Eu e meu amigo Alexandre - Lógica contra o mundo.</figcaption>
+            </figure>
+
+            <h3>E o que aconteceu depois?</h3>
+            <p><strong>Me acompanhe para saber...</strong> 🎶</p>
+        </section>
+
+    </main>
+
+    <hr>
+
+    <footer>
+        <p>&copy; 2026 - Criado por <strong>João Paulo Duque</strong></p>
+        <p style="margin-top: 10px; font-size: 0.9em;">Obrigado por acompanhar este projeto! 🎵</p>
+    </footer>
+
+</body>
+</html>
